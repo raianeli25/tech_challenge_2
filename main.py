@@ -13,6 +13,8 @@ today_str = today.strftime('%d-%m-%Y')
 data = today_str[:-4]+today_str[-2:]
 df = pd.read_csv(file_path+'\\IBOVDia_'+data+'.csv', index_col=False, skiprows=[0], sep=';', encoding='latin-1', engine= 'python')
 df.drop(df.tail(2).index,inplace=True) 
+df['date'] = today_str
+df = df.rename(columns={"Código": "cod_acao", "Ação": "nome_acao", "Qtde. Teórica": "qtd_acao", "Part. (%)": "part"})
 print(df.head())
 print(df.shape)
 file_name = 'dados_ibov_'+data+'.parquet'

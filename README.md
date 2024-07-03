@@ -43,6 +43,7 @@ O projeto foi todo desenvolvido em python, utilizamos a biblioteca [Selenium](ht
 ---
 
 1. Abra o terminal dentro do diretório do projeto.
+
 2. Instale as dependências do projeto, aqui o ideal é ter um ambiente virtual já criado.
 
    `pip install -r requirements.txt`

@@ -48,6 +48,8 @@ O projeto foi todo desenvolvido em python, utilizamos a biblioteca [Selenium](ht
    `pip install -r requirements.txt`
 3. Rode o comando abaixo para subir o arquivo no bucket
 
+   `python main.py`
+
 **Obs.:** É importante ter o bucket configurado na AWS, assim como os outros serviços mostrados no diagrama para conseguir rodar o projeto ponta a ponta.
 
 ### Demos ⚒️

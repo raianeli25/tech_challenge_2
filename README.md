@@ -26,6 +26,7 @@ O projeto foi todo desenvolvido em python, utilizamos a biblioteca [Selenium](ht
     ├── img
     ├── bucket_functions.py
     ├── download_csv.py
+    ├── glue_job.py
     ├── lambda_function.py
     ├── main.py
     └── requirements.txt
@@ -34,6 +35,7 @@ O projeto foi todo desenvolvido em python, utilizamos a biblioteca [Selenium](ht
 * **img:** pasta contendo imagens utilizadas no readme.
 * **bucket_functions.py:** função que acessa o bucket e faz a manipulação dos objetos.
 * **download_csv.py** código que realiza o webscraping da página do ibovespa.
+* **glue_job.py:** script de criação job do glue.
 * **lambda_function.py:** função utilizada no serviço lambda para trigar o job do glue.
 * **main.py:** arquivo principal que executa o download do arquivo csv, transforma em parquet e sobe o arquivo no bucket da amazon.
 * **requirements.txt:** arquivo com todos os pacotes necessários para rodar este projeto.
